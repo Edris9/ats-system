@@ -20,7 +20,10 @@ public class JobsController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetJobs()
     {
-        var companyId = Guid.Parse(HttpContext.Items["CompanyId"]!.ToString()!);
+        var companyIdStr = HttpContext.Items["CompanyId"]?.ToString();
+        if (string.IsNullOrEmpty(companyIdStr) || !Guid.TryParse(companyIdStr, out var companyId))
+            return BadRequest(new { error = "Inget företag kopplat till användaren" });
+        
         var jobs = await _jobService.GetByCompanyIdAsync(companyId);
         return Ok(jobs);
     }
@@ -28,8 +31,13 @@ public class JobsController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateJob([FromBody] CreateJobDto dto)
     {
-        var companyId = Guid.Parse(HttpContext.Items["CompanyId"]!.ToString()!);
-        var userId = Guid.Parse(HttpContext.Items["UserId"]!.ToString()!);
+        var companyIdStr = HttpContext.Items["CompanyId"]?.ToString();
+        var userIdStr = HttpContext.Items["UserId"]?.ToString();
+        
+        if (string.IsNullOrEmpty(companyIdStr) || !Guid.TryParse(companyIdStr, out var companyId))
+            return BadRequest(new { error = "Inget företag kopplat till användaren" });
+        
+        var userId = Guid.Parse(userIdStr!);
         var job = await _jobService.CreateAsync(dto, companyId, userId);
         return Ok(job);
     }

@@ -9,7 +9,6 @@ D:\ats-system\backend\ATS.Api\bin\Debug\net10.0\ATS.Api.pdb
 D:\ats-system\backend\ATS.Api\bin\Debug\net10.0\BCrypt.Net-Next.dll
 D:\ats-system\backend\ATS.Api\bin\Debug\net10.0\Dapper.dll
 D:\ats-system\backend\ATS.Api\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\ats-system\backend\ATS.Api\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
 D:\ats-system\backend\ATS.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
 D:\ats-system\backend\ATS.Api\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
 D:\ats-system\backend\ATS.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll

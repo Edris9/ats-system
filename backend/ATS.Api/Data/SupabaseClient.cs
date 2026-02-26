@@ -1,4 +1,5 @@
 using Npgsql;
+using Dapper;
 
 namespace ATS.Api.Data;
 
@@ -9,6 +10,8 @@ public class SupabaseClient
     public SupabaseClient(IConfiguration configuration)
     {
         _connectionString = configuration.GetConnectionString("Supabase")!;
+        
+        DefaultTypeMap.MatchNamesWithUnderscores = true;
     }
 
     public NpgsqlConnection CreateConnection()
