@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ATS.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01ddf3bf45e59f2baaadecd20ffdfa2f2d3f2580")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b0ee84311fc99794b409422e3168292f316fa40")]
 [assembly: System.Reflection.AssemblyProductAttribute("ATS.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ATS.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
