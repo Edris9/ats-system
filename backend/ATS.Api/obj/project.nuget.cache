@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wqhtJzAprDM=",
+  "dgSpecHash": "nsw6TVB0tfk=",
   "success": true,
   "projectFilePath": "D:\\ats-system\\backend\\ATS.Api\\ATS.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Edris\\.nuget\\packages\\bcrypt.net-next\\4.1.0\\bcrypt.net-next.4.1.0.nupkg.sha512",
+    "C:\\Users\\Edris\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
     "C:\\Users\\Edris\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.2\\microsoft.aspnetcore.openapi.10.0.2.nupkg.sha512",
     "C:\\Users\\Edris\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.16.0\\microsoft.identitymodel.abstractions.8.16.0.nupkg.sha512",
     "C:\\Users\\Edris\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.16.0\\microsoft.identitymodel.jsonwebtokens.8.16.0.nupkg.sha512",
