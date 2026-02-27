@@ -1,16 +1,12 @@
-import axios from 'axios';
+import apiClient from './apiClient';
+import type { LoginDto, CreateUserDto } from '../types';
 
-const apiClient = axios.create({
-  baseURL: 'http://localhost:5121/api',
-});
+export const login = async (dto: LoginDto) => {
+  const response = await apiClient.post('/Auth/login', dto);
+  return response.data;
+};
 
-apiClient.interceptors.request.use((config) => {
-  const user = localStorage.getItem('user');
-  if (user) {
-    const { token } = JSON.parse(user);
-    config.headers.Authorization = `Bearer ${token}`;
-  }
-  return config;
-});
-
-export default apiClient;
+export const createUser = async (dto: CreateUserDto) => {
+  const response = await apiClient.post('/Auth/create-user', dto);
+  return response.data;
+};
